@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "name": "HealthCare Pharmacy",
+      "address": "Sector 10, Vashi, Navi Mumbai",
+      "latitude": 19.0846,
+      "longitude": 72.8881
+    },
+    {
+      "id": 2,
+      "name": "MedPlus",
+      "address": "Seawoods, Navi Mumbai",
+      "latitude": 19.0162,
+      "longitude": 73.0297
+    },
+    {
+      "id": 3,
+      "name": "Wellness Forever",
+      "address": "Belapur CBD, Navi Mumbai",
+      "latitude": 19.0275,
+      "longitude": 73.0159
+    }
+  ]
+  
