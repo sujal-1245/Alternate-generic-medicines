@@ -94,3 +94,10 @@ function displayResults(medicines) {
         alert('No medicines found.');
     }
 }
+
+// Toggle the menu visibility when hamburger is clicked
+function toggleMenu() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('active');
+  }
+  
