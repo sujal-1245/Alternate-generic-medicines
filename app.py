@@ -2,6 +2,7 @@ import os
 import logging
 import pickle
 import pandas as pd
+import random
 from flask import Flask, render_template, request, jsonify
 
 # Base directory (where this file lives)
@@ -83,6 +84,41 @@ def search_medicine():
                 {
                     "status": "error",
                     "message": "An error occurred during search. Please try again later.",
+                }
+            ),
+            500,
+        )
+
+
+# 🔹 New random suggestions endpoint
+@app.route("/suggestions", methods=["GET"])
+def suggestions():
+    try:
+        # Pick 5 random medicines each time
+        suggestions_df = data.sample(n=5).to_dict(orient="records")
+
+        # Format them properly
+        results = []
+        for med in suggestions_df:
+            medicine_info = {
+                "Medicine Name": med.get("name", ""),
+                "Manufacturer": med.get("manufacturer_name", ""),
+                "Type": med.get("type", ""),
+                "Pack Size": med.get("pack_size_label", ""),
+                "Price (₹)": med.get("price(₹)", ""),
+                "Symptoms": med.get("symptoms", ""),
+            }
+            results.append(medicine_info)
+
+        return jsonify({"status": "success", "data": results})
+
+    except Exception as e:
+        logging.error(f"❌ Error generating suggestions: {e}")
+        return (
+            jsonify(
+                {
+                    "status": "error",
+                    "message": "Could not generate suggestions.",
                 }
             ),
             500,
