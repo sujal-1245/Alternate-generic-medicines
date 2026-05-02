@@ -4,6 +4,7 @@ import pickle
 import pandas as pd
 import random
 from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS
 
 # Base directory (where this file lives)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -13,6 +14,8 @@ app = Flask(
     template_folder=os.path.join(BASE_DIR, "templates"),
     static_folder=os.path.join(BASE_DIR, "static"),
 )
+
+CORS(app)
 
 # Initialize logging
 logging.basicConfig(level=logging.DEBUG)
