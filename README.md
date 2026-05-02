@@ -39,8 +39,11 @@ Unlike existing platforms, Dawaai combines **AI-based recommendation + real-worl
 ## 📱 Mobile Application
 
 <p align="center">
-  <img src="screenshots/appHome.png" width="220"/>
-  <img src="screenshots/appSearch.png" width="220"/>
+  
+  <img width="289" height="511" alt="image" src="https://github.com/user-attachments/assets/440ec80c-4f1c-4c5b-9ff4-33a8d3e0f490" />
+  <img width="289" height="256" alt="image" src="https://github.com/user-attachments/assets/c1d83334-7d41-4f34-aa01-ad6a901c0251" />
+
+  
 </p>
 
 <p align="center">
