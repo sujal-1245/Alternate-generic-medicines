@@ -257,8 +257,4 @@ MIT License
 
 ## 👨‍💻 Author
 
-**Sujal**
-```
-
----
-
+<p align="center"> <a href="https://github.com/sujal-1245" target="_blank"> <img src="https://img.shields.io/badge/GitHub-Sujal--1245-181717?style=for-the-badge&logo=github&logoColor=white"/> </a> </p> ```
