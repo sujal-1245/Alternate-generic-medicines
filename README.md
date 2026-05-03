@@ -62,19 +62,19 @@ https://github.com/user-attachments/assets/52dd5e75-2f3d-442e-ae03-8765e36160dc
 ## 🌐 Web Application
 
 <p align="center">
-  <img src="screenshots/webHome.png" width="700"/>
+  <img width="452" height="194" alt="image" src="https://github.com/user-attachments/assets/f19183b5-5710-4749-9c1b-08cecd40fac4" />
+
+
+  <img width="452" height="200" alt="image" src="https://github.com/user-attachments/assets/393bef48-f2e1-4ceb-bd46-2c2f9a860776" />
+
 </p>
 
 <p align="center">
-  <img src="screenshots/webSearch.png" width="700"/>
-</p>
+  <img width="452" height="201" alt="image" src="https://github.com/user-attachments/assets/6b332c2c-8557-4de2-bcf0-10f57b0b7ebc" />
 
-<p align="center">
-  <img src="screenshots/webresults.png" width="700"/>
-</p>
 
-<p align="center">
-  <img src="screenshots/webmap.png" width="700"/>
+  <img width="452" height="199" alt="image" src="https://github.com/user-attachments/assets/304c3a33-78eb-4af5-b028-e6702fee43b3" />
+
 </p>
 
 ---
