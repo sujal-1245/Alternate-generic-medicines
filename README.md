@@ -30,8 +30,10 @@ Unlike existing platforms, Dawaai combines **AI-based recommendation + real-worl
 
 <p align="center">
 
-  <img src="[https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg](https://github.com/user-attachments/assets/f9f92802-2818-4313-a42d-87c3f7422868)" width="600"/>
 
+https://github.com/user-attachments/assets/52dd5e75-2f3d-442e-ae03-8765e36160dc
+
+  
 </p>
 
 ---
