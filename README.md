@@ -30,7 +30,8 @@ Unlike existing platforms, Dawaai combines **AI-based recommendation + real-worl
 
 <p align="center">
   <a href="YOUR_VIDEO_LINK">
-    <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg" width="600"/>
+    <img src="[https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg](https://github.com/user-attachments/assets/f9f92802-2818-4313-a42d-87c3f7422868)" width="600"/>
+    
   </a>
 </p>
 
@@ -40,20 +41,24 @@ Unlike existing platforms, Dawaai combines **AI-based recommendation + real-worl
 
 <p align="center">
   
-  <img width="289" height="511" alt="image" src="https://github.com/user-attachments/assets/440ec80c-4f1c-4c5b-9ff4-33a8d3e0f490" />
-  <img width="289" height="256" alt="image" src="https://github.com/user-attachments/assets/c1d83334-7d41-4f34-aa01-ad6a901c0251" />
+  <img width="220" alt="image" src="https://github.com/user-attachments/assets/440ec80c-4f1c-4c5b-9ff4-33a8d3e0f490" />
+  <img width="220" alt="image" src="https://github.com/user-attachments/assets/c1d83334-7d41-4f34-aa01-ad6a901c0251" />
 
   
 </p>
 
 <p align="center">
-  <img src="screenshots/searchResults.png" width="220"/>
-  <img src="screenshots/selectMedicine.png" width="220"/>
+  <img width="220" alt="image" src="https://github.com/user-attachments/assets/4adfb5b3-d17f-41fc-9efc-ee04479c459a" />
+
+  <img width="220" alt="image" src="https://github.com/user-attachments/assets/7fd33003-e5a6-44b0-acac-a52139f9c10d" />
+
 </p>
 
 <p align="center">
-  <img src="screenshots/locatemed.png" width="220"/>
-  <img src="screenshots/map.png" width="220"/>
+  <img width="220" alt="image" src="https://github.com/user-attachments/assets/586889df-9706-4979-8c15-303cb79f6473" />
+
+  <img width="220" alt="image" src="https://github.com/user-attachments/assets/70b7bb80-26ca-442b-b38c-24ea19b01f63" />
+
 </p>
 
 ---
