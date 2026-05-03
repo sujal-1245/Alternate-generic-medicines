@@ -1,4 +1,4 @@
-<h1 align="center">💊 Dawaai – Smart Generic Medicine Finder</h1>
+<h1 align="center">💊 Dawaikhana – Smart Generic Medicine Finder</h1>
 
 <p align="center">
   <b>AI-powered system to find affordable generic medicines and nearby pharmacies</b>
@@ -15,14 +15,14 @@
 
 ## 🌟 Overview
 
-**Dawaai** is a machine learning-powered healthcare application that helps users:
+**Dawaikhana** is a machine learning-powered healthcare application that helps users:
 
 - 🔍 Search medicines using **name or symptoms**
 - 💊 Discover **generic alternatives** for expensive branded drugs
 - 📊 Compare medicines based on price and details
 - 📍 Locate **nearby pharmacies** using map integration
 
-Unlike existing platforms, Dawaai combines **AI-based recommendation + real-world accessibility** in one system.
+Unlike existing platforms, Dawaikhana combines **AI-based recommendation + real-world accessibility** in one system.
 
 ---
 
