@@ -42,33 +42,20 @@ https://github.com/user-attachments/assets/52dd5e75-2f3d-442e-ae03-8765e36160dc
 
 <p align="center">
   
-  <img width="220" alt="image" src="https://github.com/user-attachments/assets/440ec80c-4f1c-4c5b-9ff4-33a8d3e0f490" />
+  <img width="200" alt="image" src="https://github.com/user-attachments/assets/440ec80c-4f1c-4c5b-9ff4-33a8d3e0f490" />
   
-  <img width="220" alt="image" src="https://github.com/user-attachments/assets/c1d83334-7d41-4f34-aa01-ad6a901c0251" />
+  <img width="200" alt="image" src="https://github.com/user-attachments/assets/c1d83334-7d41-4f34-aa01-ad6a901c0251" />
   
-  <img width="220" alt="image" src="https://github.com/user-attachments/assets/4adfb5b3-d17f-41fc-9efc-ee04479c459a" />
+  <img width="200" alt="image" src="https://github.com/user-attachments/assets/4adfb5b3-d17f-41fc-9efc-ee04479c459a" />
 
-  <img width="220" alt="image" src="https://github.com/user-attachments/assets/7fd33003-e5a6-44b0-acac-a52139f9c10d" />
+  <img width="200" alt="image" src="https://github.com/user-attachments/assets/7fd33003-e5a6-44b0-acac-a52139f9c10d" />
 
-  <img width="220" alt="image" src="https://github.com/user-attachments/assets/586889df-9706-4979-8c15-303cb79f6473" />
+  <img width="200" alt="image" src="https://github.com/user-attachments/assets/586889df-9706-4979-8c15-303cb79f6473" />
 
-  <img width="220" alt="image" src="https://github.com/user-attachments/assets/70b7bb80-26ca-442b-b38c-24ea19b01f63" />
+  <img width="200" alt="image" src="https://github.com/user-attachments/assets/70b7bb80-26ca-442b-b38c-24ea19b01f63" />
 
   
 </p>
-
-<p align="center">
-  <img width="220" alt="image" src="https://github.com/user-attachments/assets/4adfb5b3-d17f-41fc-9efc-ee04479c459a" />
-
-  <img width="220" alt="image" src="https://github.com/user-attachments/assets/7fd33003-e5a6-44b0-acac-a52139f9c10d" />
-
-  <img width="220" alt="image" src="https://github.com/user-attachments/assets/586889df-9706-4979-8c15-303cb79f6473" />
-
-  <img width="220" alt="image" src="https://github.com/user-attachments/assets/70b7bb80-26ca-442b-b38c-24ea19b01f63" />
-
-</p>
-
-
 
 ---
 
