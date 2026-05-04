@@ -129,11 +129,11 @@ Pharmacy Locator
 
 ## 🧪 Performance Metrics
 
-| Query Type        | Precision | Recall | Accuracy |
-|------------------|----------|--------|----------|
-| Exact Queries     | 0.92     | 0.90   | 0.96     |
-| Misspelled Queries| 0.88     | 0.85   | 0.93     |
-| Symptom-Based     | 0.81     | 0.79   | 0.87     |
+| Query Type         | Precision | Recall | Accuracy |
+|-------------------|----------|--------|----------|
+| Exact Queries      | 0.70     | 0.70   | 0.92     |
+| Misspelled Queries | 0.73     | 0.73   | 1.00     |
+| Symptom-Based      | 0.15     | 0.15   | 0.35     |
 
 ⚡ Average Response Time: **< 500ms**
 
