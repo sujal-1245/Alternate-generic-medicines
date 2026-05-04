@@ -142,7 +142,8 @@ Pharmacy Locator
 ## 🏗 System Architecture
 
 <p align="center">
-  <img src="screenshots/workflow.png" width="600"/>
+  <img width="452" height="257" alt="image" src="https://github.com/user-attachments/assets/1da3092e-c75c-439c-b6a6-3e3d875b343a" />
+
 </p>
 
 ### Components:
