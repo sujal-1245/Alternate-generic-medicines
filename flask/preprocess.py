@@ -59,9 +59,10 @@ data['symptoms'] = data.apply(generate_symptoms, axis=1)
 # Create 'search_field' for model
 data['search_field'] = (
     data['name'].fillna('') + ' ' +
+    data['name'].fillna('') + ' ' +   # boost
+    data['name'].fillna('') + ' ' +   # boost more
     data['manufacturer_name'].fillna('') + ' ' +
     data['type'].fillna('') + ' ' +
-    data['pack_size_label'].fillna('') + ' ' +
     data['symptoms'].fillna('')
 )
 
@@ -69,11 +70,16 @@ data['search_field'] = data['search_field'].str.strip()
 data = data[data['search_field'] != '']
 
 # Vectorize
-vectorizer = TfidfVectorizer(stop_words='english')
+vectorizer = TfidfVectorizer(
+    stop_words='english',
+    ngram_range=(1,2),   # captures "blood sugar", "heart attack"
+    min_df=2,
+    max_df=0.9
+)
 X = vectorizer.fit_transform(data['search_field'])
 
 # Model
-model = NearestNeighbors(n_neighbors=5, metric='cosine')
+model = NearestNeighbors(n_neighbors=10, metric='cosine')
 model.fit(X)
 
 # Save vectorizer, model, and cleaned data

@@ -7,8 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:url_launcher/url_launcher.dart';
 import 'splash_screen.dart';
 
-
-const String BASE_URL = "https://alternate-generic-medicines-production.up.railway.app";
+const String BASE_URL = "https://alternate-generic-medicines.onrender.com";
 
 void main() {
   runApp(const DawaaiApp());
@@ -30,7 +29,6 @@ class DawaaiApp extends StatelessWidget {
         ),
       ),
       home: const SplashScreen(),
-
     );
   }
 }
@@ -68,17 +66,32 @@ class _HomePageState extends State<HomePage> {
     _loadSuggestions();
   }
 
-  Future<void> _loadSuggestions() async {
+  Future<void> _loadSuggestions({bool retry = true}) async {
     try {
       final url = Uri.parse("$BASE_URL/suggestions");
-      final res = await http.get(url).timeout(const Duration(seconds: 8));
+      final res = await http.get(url).timeout(const Duration(seconds: 30));
+
+      print("SUGGESTIONS STATUS: ${res.statusCode}");
+      print("SUGGESTIONS BODY: ${res.body}");
+
       if (res.statusCode == 200) {
         final jsonBody = json.decode(res.body);
-        setState(() {
-          _suggested = jsonBody["data"] ?? [];
-        });
+        if (mounted) {
+          setState(() {
+            _suggested = jsonBody["data"] ?? [];
+          });
+        }
       }
-    } catch (_) {
+    } catch (e) {
+      print("Suggestions error: $e");
+
+      // 👇 retry only once (important to avoid infinite loop)
+      if (retry) {
+        print("Retrying suggestions...");
+        await Future.delayed(const Duration(seconds: 3));
+        return _loadSuggestions(retry: false);
+      }
+
       if (mounted) setState(() => _suggested = []);
     }
   }
@@ -99,7 +112,10 @@ class _HomePageState extends State<HomePage> {
             headers: {"Content-Type": "application/json"},
             body: json.encode({"medicine": query}),
           )
-          .timeout(const Duration(seconds: 12));
+          .timeout(const Duration(seconds: 35));
+
+      print("STATUS: ${res.statusCode}");
+      print("BODY: ${res.body}");
 
       if (res.statusCode == 200) {
         final body = json.decode(res.body);
@@ -712,7 +728,10 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildSuggested() {
     if (_suggested.isEmpty) {
-      return const SizedBox.shrink();
+      return const Padding(
+        padding: EdgeInsets.all(20),
+        child: Text("No suggestions (server may be waking up...)"),
+      );
     }
 
     return Column(
@@ -806,6 +825,17 @@ class _HomePageState extends State<HomePage> {
         return const Padding(
           padding: EdgeInsets.all(20),
           child: Center(child: CircularProgressIndicator()),
+        );
+      }
+      if (_error.isNotEmpty) {
+        return Padding(
+          padding: const EdgeInsets.all(20),
+          child: Center(
+            child: Text(
+              _error,
+              style: const TextStyle(color: Colors.red),
+            ),
+          ),
         );
       }
       return const SizedBox.shrink();
@@ -944,9 +974,8 @@ class _HomePageState extends State<HomePage> {
                               child: Text(
                                 isBranded ? "Branded" : "Generic",
                                 style: TextStyle(
-                                  color: isBranded
-                                      ? Colors.white
-                                      : Colors.black87,
+                                  color:
+                                      isBranded ? Colors.white : Colors.black87,
                                   fontWeight: FontWeight.w700,
                                   fontSize: 12,
                                 ),
